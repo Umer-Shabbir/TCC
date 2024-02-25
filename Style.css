@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "tektur";
-    src: url(./Resources/Fonts/Brefid.ttf);
+    src: url(./Resources/Fonts/Tektur-VariableFont_wdth\,wght.ttf);
 }
 @font-face {
     font-family: "montserrat";
@@ -29,14 +29,15 @@
 
     /* Font weights */
     --font-weight-400 : 400;
+    --font-weight-500 : 500;
     --font-weight-600 : 600;
     --font-weight-700 : 700;
     --font-weight-900 : 900;
 
 /* Font sizes */
     --body-copy-size : 1rem;
-    --main-heading-size : 3rem;
-    --secondry-heading-size : 1.5rem;
+    --main-heading-size : 3.5rem;
+    --secondry-heading-size : 2rem;
 
     
 }
@@ -137,18 +138,19 @@ b {
     font-family: var(--font-family-tektur);
     font-size: var(--main-heading-size);
     color: var(--heading-color);
-    font-weight: var(--font-weight-400);
+    font-weight: var(--font-weight-700);
 
 }
 .heading-h2 {
     font-family: var(--font-family-tektur);
     font-size: var(--secondry-heading-size);
     color: var(--heading-color);
-    font-weight: var(--font-weight-400);
+    font-weight: var(--font-weight-700);
 
 }
 .heading-h3 {
     font-family: var(--font-family-tektur);
+    font-weight: var(--font-weight-700);
     font-size: 1.2rem;
     color: var(--heading-color);
 
@@ -224,6 +226,7 @@ main {
 }
 #main-h1-span {
     color: var(--secondry-color);
+    margin-left: 10px;
 }
 
 #hero-img {
