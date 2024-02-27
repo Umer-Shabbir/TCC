@@ -74,9 +74,8 @@ html {
 }
 
 /* min body height */
-
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 /* responsive images/videos */
@@ -186,7 +185,7 @@ body {
     
 }
 main {
-    margin: 0 100px;
+    margin: 0 50px;
 }
 .top-nav-links {
     display: flex;
@@ -230,9 +229,27 @@ main {
 }
 
 #hero-img {
-    width: 800px;
+    background-image: url(./Resources/Images/vecteezy_multiracial-group-of-happy-people-waving-hand_12912807_685/vecteezy_multiracial-group-of-happy-people-waving-hand_12912807.jpg);
+    width: 100%;
     height: 500px;
-    border-radius: 30px;
+    background-size:cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#home-aboutus-img {
+    background-image: url(./Resources/Images/team_spirit_re_yl1v.svg);
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#home-ourvision-img {
+    background-image: url(./Resources/Images/vecteezy_social-network-teamwork_2214406/Teamwork_Hashtag_generated.jpg);
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    border-radius: 2.5rem;
 }
 #hero-btns {
     display: flex;
@@ -265,6 +282,7 @@ main {
     gap: 30px;
 }
 .our-vision {
+    
     display: flex;
     gap: 50px;
 }
@@ -320,13 +338,21 @@ main {
 .bootcamp-img {
     width: 160px;
     height: 160px;
-    border-radius: 15px;
-    background-color: var(--white-smoke);
+    /* border-radius: 15px; */
+    /* background-color: var(--white-smoke); */
 }
 #bootcapms-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.bootcammp-card-detail {
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 5px 0 0 0;
+    font-family: var(--font-family-montserrat);
+    color: var(--body-copy-color);
+
 }
 #ad-banner {
     display: flex;
@@ -416,3 +442,20 @@ main {
 #join-managment-ad {
     text-align: center;
 }
+
+#aside-nav-html {
+    width: 200px;
+    height: 500px;
+    border-radius: 30PX;
+    background-color: var(--white-smoke);
+}
+
+#aside-nav-html ul {
+    padding-top:  3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+}
+
