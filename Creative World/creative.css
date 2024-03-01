@@ -206,6 +206,8 @@ main {
         'seven eight eight'
 
     ;
+    flex-grow: 2;
+    
     
 }
 #socials-grid div:nth-child(1) {

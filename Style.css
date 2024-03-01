@@ -249,6 +249,7 @@ main {
 }
 .partnerships {
   text-align: center;
+  display: none;
 }
 .partners {
     margin-top: 30px;
@@ -275,7 +276,7 @@ main {
 .our-vision {
     
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 .our-vision div:nth-child(2) {
     margin-top: 50px;
@@ -288,20 +289,23 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .why-us-lists {
     display: flex;
+    justify-content: center;
+
 }
-.why-us-lists div {
-    margin: 0 100px 0 100px ;
+.why-us-lists div:nth-child(1) {
+    margin: 0 100px 0 auto;
 }
-.why-us-lists div ol {
+.why-us-lists div ul {
     font-weight: var(--font-weight-600);
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.why-us-lists div ol li::marker{
+.why-us-lists div ul li::marker{
     color: var(--primary-color);
 }
 #more-benefits-btn {
@@ -414,6 +418,13 @@ main {
     border-radius: 15px;
     background-color: var(--white-smoke);
 }
+.team-card-img img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: var(--white-smoke);
+}
 #team-grid-container {
     display: flex;
     justify-content: center;
@@ -466,7 +477,7 @@ main {
     border-radius: 20px;
     display: grid;
     padding: 30px;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
     grid-template-areas: 
@@ -506,8 +517,8 @@ main {
 .social-grid-item {
     cursor: pointer;
     
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border: 20px solid var(--white-smoke);
     border-radius: 10px;
     background-color: var(--white-smoke);
@@ -527,4 +538,212 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+
+
+
+
+#our-vision-aboutus {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.course {
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    height: 300px;
+    border: 0.5px solid hsla(0, 1%, 51%, 0.384);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 2px rgba(75, 179, 253, 0.30);
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(75,179,253,0.30);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(75,179,253,0.30);
+    cursor: pointer;
+    margin: 10px 30px 50px 30px;
+}
+.course-img {
+    width: 160px;
+    height: 160px;
+    /* border-radius: 15px; */
+    /* background-color: var(--white-smoke); */
+}
+#courses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.course-card-detail {
+    background-color: var(--white-smoke);
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 5px 0 0 0;
+    font-family: var(--font-family-montserrat);
+    color: var(--body-copy-color);
+
+}
+
+#course-intro {
+    /* width: 100%;
+    height: 25rem; */
+    background-color: #00487C;
+    padding: 100px;
+    
+}
+#course-intro h2 {
+    width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white);
+  font-size: var(--secondry-heading-size);
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family-tektur);
+}
+
+
+#our-clubs {
+    text-align: center;
+}
+
+
+#clubs-grid {
+    box-shadow: 0px 0px 30px 2px rgba(75, 179, 253, 0.30);
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(75,179,253,0.30);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(75,179,253,0.30);
+    background-color: var(--white);
+    border-radius: 20px;
+    display: grid;
+    padding: 30px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+        'one two three'
+        ' four five six'
+        'seven eight eight'
+
+    ;
+    
+    
+}
+#clubs-grid div:nth-child(1) {
+    grid-area: one;
+}
+#clubs-grid div:nth-child(2) {
+    grid-area: two;
+}
+#clubs-grid div:nth-child(3) {
+    grid-area: three;
+}
+#clubs-grid div:nth-child(4) {
+    grid-area: four;
+}
+#clubs-grid div:nth-child(5) {
+    grid-area: five;
+}
+#clubs-grid div:nth-child(6) {
+    grid-area: six;
+}
+#clubs-grid div:nth-child(7) {
+    grid-area: seven;
+}
+#clubs-grid div:nth-child(8) {
+    grid-area: eight;
+}
+
+.clubs-grid-item {
+    cursor: pointer;
+    
+    width: 150px;
+    height: 200px;
+    border: 20px solid var(--white-smoke);
+    border-radius: 10px;
+    background-color: var(--white-smoke);
+}
+.clubs-grid-item img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.clubs-grid-item:hover {
+    cursor: pointer;
+    
+   
+    transition: 1s ease-in-out;
+    border: 20px solid var(--white-smoke);
+    border-radius: 10px;
+    background-color: var(--white-smoke);
+}
+.social-link-container {
+
+}
+.social-link {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--white-smoke);
+    padding: 20px;  
+    border-radius: 20px;
+}
+
+.social-link:hover {
+    cursor: pointer;
+    animation: bounce 2.5s infinite; 
+    -webkit-animation: bounce 2.5s infinite; 
+    -moz-animation: bounce 2.5s infinite; 
+    -o-animation: bounce 2.5s infinite; 
+ }
+
+
+
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+       -webkit-transform: translateY(0);
+    } 
+    50% {
+        -webkit-transform: translateY(-10px);
+    }
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {
+       -moz-transform: translateY(0);
+    }
+    50% {
+       -moz-transform: translateY(-10px);
+    }
+}
+@-o-keyframes bounce {
+    0%,
+    100% {
+       -o-transform: translateY(0);
+    }
+    50% {
+       -o-transform: translateY(-10px);
+    }
+}
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }

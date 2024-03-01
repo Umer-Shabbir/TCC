@@ -39,6 +39,7 @@
 }
 #bootcapms-container {
     flex-direction: column;
+    
 }
 #bootcamp-detail {
     margin-left: 50px;
@@ -46,11 +47,26 @@
     flex-direction: column;
     gap: 1.5rem;
 
+
 }
 #bootcamps-side-nav {
-    /* background-color: var(--white); */
-    border: 5px solid whitesmoke;
+    background-color: var(--white);     
+    border-bottom: 5px solid whitesmoke; 
     width: 30rem;
     height: 100vh; 
-    overflow-y: auto
+    overflow-y: auto;
+    padding: 20px;
+
+}
+.open-enroll {
+    background-color: #008000;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 2rem;
+}
+.close-enroll {
+    background-color: #8b0000;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 2rem;
 }
