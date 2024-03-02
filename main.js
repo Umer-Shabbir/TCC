@@ -36,7 +36,7 @@ angularBootcamp.addEventListener('click', function () {
 
 let enrollBootcampBtn = document.getElementById("enroll-bootcamp-btn")
 let enrollStatusDisplay = document.getElementById("enroll-status-el")
-let enrollStatusAdmin = "ope"
+let enrollStatusAdmin = "open"
 
 if(enrollStatusAdmin === "open") {
   enrollStatusDisplay.innerHTML = `<span class="open-enroll">Enrollment Is Opened</span>`
