@@ -811,6 +811,11 @@ main {
         gap: 10px;
         
     }
+    #socials-grid {
+
+        margin:0 auto;
+        
+    }
     .our-socials{
         display: none;
     }
@@ -826,5 +831,14 @@ main {
     #about-intro div:nth-child(2) {
         margin-left: 0px;
     
+    }
+    #about-intro {
+        display: block;
+    }
+    body {
+        margin: 20px;
+    }
+    main {
+        margin: 0;
     }
 }
