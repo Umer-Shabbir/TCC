@@ -747,3 +747,34 @@ main {
         transform: translateY(-10px);
     }
 }
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .top-nav div:nth-child(3) {
+        display: none;
+    }
+    .top-nav-links {
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: #00487C;
+        border-radius: 0;
+        padding: min(30vh, 10rem);
+        margin: 0;
+        flex-direction: column;
+        color: var(--white);
+        font-size: var(--secondry-heading-size);
+        font-weight: var(--font-weight-600);
+        font-family: var(--font-family-tektur);
+    }
+    
+        .navlink-active {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-color: #4BB3FD;
+            text-decoration-thickness: 5px;
+    }
+}
