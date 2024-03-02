@@ -6,6 +6,7 @@ var angularBootcamp = document.getElementById('angular-bootcamp');
 var pythonBootcamp = document.getElementById('python-bootcamp');
 let bootcampDetailIntro = document.getElementById('bootcamp-detail-intro');
 
+
 let bootcampIntros = {
   html: "HTML, short for HyperText Markup Language, is code for web pages. It uses tags to instruct browsers on content display. HTML structures text, adds images, links, and more for website creation.",
   css: "CSS, or Cascading Style Sheets, styles web content. It controls text, colors, and layout for attractive websites. CSS creates consistent styles across a site for a polished appearance",
@@ -44,3 +45,7 @@ if(enrollStatusAdmin === "open") {
 }else {
   enrollStatusDisplay.innerHTML = `<span class="close-enroll">Enrollment Is Closed</span>`
 }
+
+
+
+

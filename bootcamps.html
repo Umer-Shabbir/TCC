@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Auther" content="Umer">
     <meta name="Description" content="The Cyber Champs">
+    <meta name="theme-color" content="#00487C"/>
     <title>TCC | Home</title>
     <link rel="stylesheet" href="./Style.css">
     <link rel="stylesheet" href="./bootcamps.css">
@@ -20,16 +21,19 @@
 </script>
 <body>
     <header>
+        
         <Nav class="top-nav">
+            
             <div>
-                <img src="./Resources/Images/Logo.svg" alt="The Cyber Champs's Logo"  class="logo">
+                <a href="./index.html"><img src="./Resources/Images/Logo.svg" alt="The Cyber Champs's Logo"  class="logo"></a>
             </div>
+           
             <div>
-                <ul  class="top-nav-links body-copy">
-                    <a href="./index.html"><li>Home</li></a>
+                <ul  class="top-nav-links body-copy" data-visible="false">
+                    <a href="./bootcamps.html"><li>Home</li></a>
                     <a href="./About-Us.html"><li>About Us</li></a>
                     <a href="./courses.html"><li>Courses</li></a>
-                    <a href=""  class="navlink-active"><li>Bootcamps</li></a>
+                    <a href="./bootcamps.html"   class="navlink-active"><li>Bootcamps</li></a>
                     <a href="./TCSCs.html"><li>TCSCs</li></a>
                     
                 </ul>
@@ -38,6 +42,7 @@
                 <a href="./Registration.html" target="_blank"><button class="btn-primary">Join</button></a>
             </div>
         </Nav>
+        <button class="mobile-nav-toggle"></button>
     </header>
     <main>
         
@@ -179,18 +184,18 @@
                     
                         </ul>
                     </div>
-                    <div>
+                    <div class="our-socials">
                         <h3 class="heading-h3">Our Socials</h3>
                         <ul>
-                        <a href=""><li>Facebook</li></a>
-                        <a href=""><li>Instagram</li></a>
-                        <a href=""><li>Youtube</li></a>
+                        <a href="https://www.facebook.com/TheCyberChamps"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/thecyberchamps/"><li>Instagram</li></a>
+                        <a href="#"><li>Youtube</li></a>
                         <a href="whatsapp://send?phone=+923497568926"><li>Whatsapp</li></a>
                         <a href=""><li>Github</li></a>
                         <a href=""><li>Discord</li></a>
                         </ul>
                     </div>
-                    <div>
+                    <div class="important-links">
                         <h3 class="heading-h3">Important Links</h3>
                         <ul>
                             <a href=""><li>About US</li></a>
@@ -216,4 +221,6 @@
     
 </body>
 <script src="./main.js"></script>
+<script src="./navbartoggle.js"></script>
+
 </html>
