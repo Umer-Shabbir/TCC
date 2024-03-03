@@ -266,7 +266,6 @@ main {
 }
 .about-us {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     gap: 50px;
     margin: 100px 0 0 0;
@@ -333,7 +332,7 @@ main {
     /* border-radius: 15px; */
     /* background-color: var(--white-smoke); */
 }
-#bootcapms-container {
+#bootcamps-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -751,6 +750,11 @@ main {
 
 
 @media only screen and (max-width: 768px) {
+
+
+    .about-us {
+        flex-direction: column;
+    }
     .top-nav div:nth-child(3) {
         display: none;
     }
@@ -782,8 +786,8 @@ main {
             text-decoration-thickness: 5px;
     }
     .mobile-nav-toggle {
-        fill: red;
-        position: absolute;
+        margin-top: 20px;
+        position: fixed;
         z-index: 9999;
         background: url(./Resources/Icons/menu_lines_hamburger_icon.svg);
         background-color: var(--white);
@@ -792,10 +796,27 @@ main {
         border: none;
         border-radius: 5px;
         width: 2rem;
-        top: 2rem;
+        top: 0rem;
         right: 2rem;
 
     }
+    .top-nav {
+
+        position: fixed;
+        top: 0rem;
+        left: 2rem;
+        margin-top: 10px;
+
+    }
+    .header-background {
+        position: fixed;
+        top: 0rem;
+        width: 100%;
+        height: 80px;
+        background-color: var(--white-smoke);
+
+    }
+
     #hero-img{
         display: none;
     }
@@ -809,12 +830,12 @@ main {
         margin-top: 20px;
         flex-direction: column;
         gap: 10px;
-        
+
     }
     #socials-grid {
 
         margin:0 auto;
-        
+
     }
     .our-socials{
         display: none;
@@ -830,7 +851,7 @@ main {
 
     #about-intro div:nth-child(2) {
         margin-left: 0px;
-    
+
     }
     #about-intro {
         display: block;
@@ -840,5 +861,64 @@ main {
     }
     main {
         margin: 0;
+    }
+    .header {
+        margin-bottom: 100px;
+    }
+    .bootcamp {
+        width: 300px;
+        height: 400px;
+
+    }
+    .bootcamp-img {
+        width: 250px;
+        height: 250px;
+    }
+    .team-card {
+        padding: 30px;
+        width: 300px;
+        height: 400px;
+
+    }
+    .team-card-img {
+        width: 250px;
+        height: 250px;
+
+    }
+    .team-card-img img {
+        object-fit: fill;
+        width: 250px;
+        height: 250px;
+
+    }
+    #our-bootcamps{
+       flex-direction: column;
+    }
+    #bootcamps-side-nav {
+        width: 100% !important;
+        height: auto !important;
+        overflow-x: auto;
+    }
+    #bootcamps-container {
+        justify-content: normal;
+        flex-direction: row !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    #team-grid-container {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: normal;
+    }
+    #copy-right p {
+        font-size: 0.75rem;
+        font-family: var(--font-family-montserrat);
+        color: var(--body-copy-color);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #socials-grid {
+        display: none;
     }
 }
