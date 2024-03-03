@@ -695,6 +695,9 @@ main {
     background-color: var(--white-smoke);
     padding: 20px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-link:hover {
