@@ -889,8 +889,8 @@ main {
 
     }
     .team-card-img img {
-        object-fit: fill;
-        width: 250px;
+        
+        width: 240px;
         height: 250px;
 
     }
