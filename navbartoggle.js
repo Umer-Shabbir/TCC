@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let navLinks = document.querySelector(".top-nav-links");
   
     navToggle.addEventListener("click", () => {
-      console.log("Button clicked!");
       let visibility = navLinks.getAttribute("data-visible");
       if (visibility === "false") {
         navLinks.setAttribute("data-visible", "true");

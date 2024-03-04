@@ -685,9 +685,6 @@ main {
     border-radius: 10px;
     background-color: var(--white-smoke);
 }
-.social-link-container {
-
-}
 .social-link {
     text-align: center;
     width: 100%;
@@ -707,7 +704,9 @@ main {
     -moz-animation: bounce 2.5s infinite;
     -o-animation: bounce 2.5s infinite;
  }
-
+#mobile-scroll-bootcamps {
+    display: none;
+}
 
 
 @-webkit-keyframes bounce {
@@ -748,11 +747,17 @@ main {
 }
 
 
-
-
+#bootcamps-side-nav {
+    height: 100vh;
+    text-align: center;
+}
 
 
 @media only screen and (max-width: 768px) {
+   
+    #mobile-scroll-bootcamps {
+        display: block;
+    }
 
 
     .about-us {
@@ -924,4 +929,23 @@ main {
     #socials-grid {
         display: none;
     }
+}
+@media only screen and (max-width: 425px) {
+    .heading-h1 {
+        font-size: 3rem;
+    }
+  
+    body {
+        margin: 0;
+    }
+    .top-nav-links {
+        padding: min(10vh, 10rem);
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .top-nav-links {
+        padding: min(8vh, 10rem);
+    }
+
 }
