@@ -4,6 +4,10 @@ var jsBootcamp = document.getElementById('js-bootcamp');
 var reactBootcamp = document.getElementById('react-bootcamp');
 var angularBootcamp = document.getElementById('angular-bootcamp');
 var pythonBootcamp = document.getElementById('python-bootcamp');
+var graphicBootcamp = document.getElementById('graphic-bootcamp');
+let bootcampDuration = document.getElementById('bootcamp-duration');
+let bootcampTiming = document.getElementById('bootcamp-timing');
+let bootcampMeetingLink = document.getElementById('bootcamp-meeting-link');
 let bootcampDetailIntro = document.getElementById('bootcamp-detail-intro');
 
 
@@ -13,25 +17,92 @@ let bootcampIntros = {
   js: "JavaScript adds interactivity to websites, making them dynamic. It responds to user actions like clicks and form submissions, bringing web pages to life with functionality and engagement.",
   python: "Python, a versatile and beginner-friendly programming language, is used for web development, data analysis, and artificial intelligence. Write code in a text editor, then execute it for computer instructions.",
   react: "React, a JavaScript library for UI development, creates dynamic components without page reloads. Its component-based approach streamlines development for faster, efficient interfaces.",
-  angular: "Angular simplifies web development with TypeScript, crafting dynamic, single-page apps. Its modular design enhances scalability and efficiency for robust web applications."
+  angular: "Angular simplifies web development with TypeScript, crafting dynamic, single-page apps. Its modular design enhances scalability and efficiency for robust web applications.",
+  graphic: "Graphic design is the art of visual communication. It uses typography, photography, and illustration to create logos, brochures, and more. Graphic design combines creativity and technology to produce captivating visuals."
+}
+let bootcampDurationObj = { 
+  html: "2 Weeks",
+  css: "2 Weeks",
+  js: "2 Weeks",
+  react: "1 Month",
+  angular: "1 Month",
+  python: "4 Weeks",
+  graphic: "2 Months"
+
+}
+let bootcampTimingObj = {
+  html: "Monday - Wednesday, 09:00 PM- 10:00 PM",
+  css: "Monday - Wednesday, 09:00 PM- 10:00 PM",    
+  js: "Monday - Wednesday, 09:00 PM- 10:00 PM",
+  react: "Monday - Wednesday, 09:00 PM- 10:00 PM",
+  angular: "Monday - Wednesday, 09:00 PM- 10:00 PM",
+  python: "Thursday - Saturday, 09:00 PM- 10:00 PM",
+  graphic: "Monday - Wednesday, 09:00 PM- 10:00 PM"
+
+}
+let bootcampMeetingLinkObj = {
+  html: "https://meet.google.com/lookup/abc",
+  css: "https://meet.google.com/lookup/abc",
+  js: "https://meet.google.com/lookup/abc",
+  react: "https://meet.google.com/lookup/abc",
+  angular: "https://meet.google.com/lookup/abc",
+  python: "https://meet.google.com/lookup/abc",
+  graphic: "https://meet.google.com/lookup/abc"
 }
 htmlBootcamp.addEventListener('click', function () {
   bootcampDetailIntro.textContent = bootcampIntros.html
+  bootcampDuration.textContent = bootcampDurationObj.html
+  bootcampTiming.textContent = bootcampTimingObj.html
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.html
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
+  
 },false);
 cssBootcamp.addEventListener('click', function () {
   bootcampDetailIntro.textContent = bootcampIntros.css
+  bootcampDuration.textContent = bootcampDurationObj.css
+  bootcampTiming.textContent = bootcampTimingObj.css
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.css
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
+
 },false);
 jsBootcamp.addEventListener('click', function () {
   bootcampDetailIntro.textContent = bootcampIntros.js
+  bootcampDuration.textContent = bootcampDurationObj.js
+  bootcampTiming.textContent = bootcampTimingObj.js
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.js
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
 },false);
 reactBootcamp.addEventListener('click', function () {
   bootcampDetailIntro.textContent = bootcampIntros.react
+  bootcampDuration.textContent = bootcampDurationObj.react
+  bootcampTiming.textContent = bootcampTimingObj.react
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.react
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
+
 },false);
 pythonBootcamp.addEventListener('click', function () {
   bootcampDetailIntro.textContent = bootcampIntros.python
+  bootcampDuration.textContent = bootcampDurationObj.python
+  bootcampTiming.textContent = bootcampTimingObj.python
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.python
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
+  
 },false);
 angularBootcamp.addEventListener('click', function () {
   bootcampDetailIntro.textContent = bootcampIntros.angular
+  bootcampDuration.textContent = bootcampDurationObj.angular
+  bootcampTiming.textContent = bootcampTimingObj.angular
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.angular
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
+
+},false);
+graphicBootcamp.addEventListener('click', function () {
+  bootcampDetailIntro.textContent = bootcampIntros.graphic
+  bootcampDuration.textContent = bootcampDurationObj.graphic
+  bootcampTiming.textContent = bootcampTimingObj.graphic
+  bootcampMeetingLink.href = bootcampMeetingLinkObj.graphic
+  bootcampMeetingLink.textContent = bootcampMeetingLinkObj.angular
+
 },false);
 
 

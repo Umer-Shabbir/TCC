@@ -329,8 +329,6 @@ main {
 .bootcamp-img {
     width: 160px;
     height: 160px;
-    /* border-radius: 15px; */
-    /* background-color: var(--white-smoke); */
 }
 #bootcamps-container {
     display: flex;
@@ -413,6 +411,7 @@ main {
     height: 160px;
     border-radius: 15px;
     background-color: var(--white-smoke);
+    object-fit: cover;
 }
 .team-card-img img {
     width: 160px;
@@ -754,6 +753,46 @@ main {
 
 
 @media only screen and (max-width: 768px) {
+    .btn-primary {
+  
+        border-radius: 30px;
+        border: 1px solid var(--white);
+        width: 120px;
+        height: 45px;
+        cursor: pointer;
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+    .btn-primary:hover {
+        font-family: var(--font-family-montserrat);
+        border-radius: 30px;
+        width: 120px;
+        height: 45px;
+        cursor: pointer;
+        background-color: var(--white);
+        color: var(--body-copy-color);
+        border: 1px solid var(--black);
+    }
+    .btn-secondry {
+        font-family: var(--font-family-montserrat);
+        border-radius: 30px;
+        width: 120px;
+        height: 45px;
+        cursor: pointer;
+        background-color: var(--white);
+        color: var(--body-copy-color);
+        border: 1px solid var(--black);
+    }
+    .btn-secondry:hover {
+        font-family: var(--font-family-montserrat);
+        border-radius: 30px;
+        border: 1px solid var(--white);
+        width: 120px;
+        height: 45px;
+        cursor: pointer;
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
    
     #mobile-scroll-bootcamps {
         display: block;
@@ -873,32 +912,7 @@ main {
     .header {
         margin-bottom: 100px;
     }
-    .bootcamp {
-        width: 300px;
-        height: 400px;
-
-    }
-    .bootcamp-img {
-        width: 250px;
-        height: 250px;
-    }
-    .team-card {
-        padding: 30px;
-        width: 300px;
-        height: 400px;
-
-    }
-    .team-card-img {
-        width: 250px;
-        height: 250px;
-
-    }
-    .team-card-img img {
-        
-        width: 240px;
-        height: 250px;
-
-    }
+   
     #our-bootcamps{
        flex-direction: column;
     }
@@ -923,6 +937,10 @@ main {
         font-family: var(--font-family-montserrat);
         color: var(--body-copy-color);
     }
+    #ad-banner {
+        text-align: center;
+    }
+   
 }
 
 @media only screen and (max-width: 550px) {
@@ -931,21 +949,34 @@ main {
     }
 }
 @media only screen and (max-width: 425px) {
+
     .heading-h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
   
     body {
-        margin: 0;
+        margin: 0 10px 0 10px;
     }
     .top-nav-links {
-        padding: min(10vh, 10rem);
+        /* padding: min(10vh, 10rem); */
+        padding: 100px 6vh;
     }
 
 }
 @media only screen and (max-width: 375px) {
     .top-nav-links {
-        padding: min(8vh, 10rem);
+        padding: 100px 4vh;
+    }
+    .why-us-lists {
+        margin-left: 20px;
     }
 
+}
+@media only screen and (max-width: 320px) {
+    body {
+
+
+        padding: 0;
+        overflow-x:scroll;
+    }
 }
