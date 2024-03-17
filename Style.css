@@ -706,6 +706,10 @@ main {
 #mobile-scroll-bootcamps {
     display: none;
 }
+#about-intro p {
+
+    line-height: 25px;
+}
 
 
 @-webkit-keyframes bounce {
@@ -753,6 +757,10 @@ main {
 
 
 @media only screen and (max-width: 768px) {
+    #about-intro p {
+        
+        line-height: 25px;
+    }   
     .btn-primary {
   
         border-radius: 30px;
@@ -801,6 +809,7 @@ main {
 
     .about-us {
         flex-direction: column;
+        margin-top: 0;
     }
     .top-nav div:nth-child(3) {
         display: none;
@@ -867,6 +876,9 @@ main {
     #hero-img{
         display: none;
     }
+    .hero {
+        margin: 0;
+    }
     #home-ourvision-img {
         display: none;
     }
@@ -884,6 +896,7 @@ main {
         margin:0 auto;
 
     }
+   
     .our-socials{
         display: none;
     }
@@ -904,11 +917,13 @@ main {
         display: block;
     }
     body {
-        margin: 20px;
-    }
-    main {
         margin: 0;
     }
+    main, footer {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
     .header {
         margin-bottom: 100px;
     }
@@ -940,7 +955,9 @@ main {
     #ad-banner {
         text-align: center;
     }
-   
+   #about-hero-head h1 {
+    display: none;
+   }
 }
 
 @media only screen and (max-width: 550px) {
@@ -954,9 +971,7 @@ main {
         font-size: 2rem;
     }
   
-    body {
-        margin: 0 10px 0 10px;
-    }
+   
     .top-nav-links {
         /* padding: min(10vh, 10rem); */
         padding: 100px 6vh;
@@ -973,7 +988,8 @@ main {
 
 }
 @media only screen and (max-width: 320px) {
-    body {
+    main, footer {
+       
 
 
         padding: 0;
