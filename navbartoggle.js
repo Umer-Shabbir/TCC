@@ -1,15 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-    let navToggle = document.querySelector(".mobile-nav-toggle");
-    let navLinks = document.querySelector(".top-nav-links");
-  
-    navToggle.addEventListener("click", () => {
-      let visibility = navLinks.getAttribute("data-visible");
-      if (visibility === "false") {
-        navLinks.setAttribute("data-visible", "true");
-
-      } else {
-        navLinks.setAttribute("data-visible", "false");
-      }
-    });
-  });
-  
+document.addEventListener("DOMContentLoaded",(()=>{let e=document.querySelector(".mobile-nav-toggle"),t=document.querySelector(".top-nav-links");e.addEventListener("click",(()=>{"false"===t.getAttribute("data-visible")?t.setAttribute("data-visible","true"):t.setAttribute("data-visible","false")}))}));
