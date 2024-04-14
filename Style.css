@@ -434,6 +434,7 @@ main {
     grid-area: eight;
 }
 .social-grid-item {
+    transition: 1s ease-in-out;
     cursor: pointer;
     width: 90px;
     height: 90px;
@@ -443,8 +444,9 @@ main {
 }
 .social-grid-item:hover {
     cursor: pointer;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+    transform: scale(1.3);
     transition: 1s ease-in-out;
     border: 20px solid var(--white-smoke);
     border-radius: 10px;
